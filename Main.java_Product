@@ -3,9 +3,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int r = a/100;
-        r += (a/10) % 10;
-        r += a %10;
-        System.out.println(r);
+        int b = sc.nextInt();
+        if ((a*b)%2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
     }
 }
